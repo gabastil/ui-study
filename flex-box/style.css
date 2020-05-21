@@ -1,0 +1,40 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+}
+
+.parent {
+    position: relative;
+    background-color: lightpink;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto 0 auto;
+
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    flex: 1;
+}
+
+.child {
+    position: relative;
+    background: turquoise;
+    height: 10em;
+
+    flex-flow: column wrap;
+
+    flex-grow: 1;
+}
+
+.child:nth-child(2n) {
+    background-color: limegreen;
+}
+
+.grandchild {
+    flex-grow: 1;
+    flex-basis: auto;
+}
