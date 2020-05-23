@@ -1,21 +1,41 @@
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Roboto">
 <link rel="stylesheet" type="text/css" href="buttons.css">
 
-<h1>&lt;div/&gt; Buttons</h1>
+<h1>&lt;div/&gt; Buttons (Solid Background)</h1>
 
-<div>
-    <div class="button primary">&lt;div/&gt; Primary Button</div>
-    <div class="button secondary">&lt;div/&gt; Secondary Button</div>
-    <div class="button tertiary">&lt;div/&gt; Tertiary Button</div>
-    <div class="button warning">&lt;div/&gt; Warning Button</div>
-    <div class="button alert">&lt;div/&gt; Alert Button</div>
-    <div class="button disabled">&lt;div/&gt; Disabled Button</div>
-    <div class="button alert">&lt;div/&gt; Alert Button</div>
-    <div class="button alert">&lt;div/&gt; Alert Button</div>
+<div id='button-div'>
+    <div class="button primary">primary</div>
+    <div class="button secondary">secondary</div>
+    <div class="button tertiary">tertiary</div>
+    <div class="button warning">warning</div>
+    <div class="button alert">alert</div>
+    <div class="button disabled">disabled</div>
+</div>
+
+<h1>&lt;div/&gt; Buttons (Transparent Background)</h1>
+
+<div id='button-div'>
+    <div class="button primary-outline">outline primary</div>
+    <div class="button secondary-outline">outline secondary</div>
+    <div class="button tertiary-outline">outline tertiary</div>
+    <div class="button warning-outline">outline warning</div>
+    <div class="button alert-outline">outline alert</div>
+    <div class="button disabled-outline">outline disabled</div>
+</div>
+
+<h1>&lt;div/&gt; Buttons (Sizes)</h1>
+
+<div id='button-div'>
+    <div class="button primary extra-large">XL</div>
+    <div class="button secondary large">L</div>
+    <div class="button tertiary medium">M</div>
+    <div class="button disabled-outline">Regular</div>
+    <div class="button warning-outline small">S</div>
+    <div class="button alert-outline extra-small">XS</div>
 </div>
 
 <h1>&lt;button/&gt; Buttons</h1>
-<form>
+<form id='button-button'>
     <button class="button small primary">&lt;button/&gt; Button</button>
     <button class="button ">&lt;button/&gt; Button</button>
     <button class="button ">&lt;button/&gt; Button</button>
@@ -23,3 +43,7 @@
     <button class="button ">&lt;button/&gt; Button</button>
     <button class="button ">&lt;button/&gt; Button</button>
 </form>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script src="buttons.js"></script>

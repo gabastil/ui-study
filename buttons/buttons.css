@@ -5,72 +5,205 @@
     /* font-size: 1.5em; */
 }
 
+h1 {
+    margin: 1em 1em 0;
+}
+
+#button-div {
+    /* display: grid;
+    grid: 1fr 1fr 1fr; */
+    padding: 1em;
+
+}
+
 .button {
     padding: 1em;
-    border: 1px lightgray solid;
-    border-radius: 0.25em;
-    color: darkgray;
-    width: auto;
+    border: 1px gray solid;
+    border-radius: .75em;
+    color: #111;
+    width: 5em;
     display: inline-block;
     cursor: pointer;
 
     line-height: 100%;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 .button:hover {
     background-color: darkgray;
-    color: white;
+    color: #111;
 }
 
-/* BUTTON COLORS */
+/* SOLID BUTTON COLORS */
 .primary {
-    background-color: purple;
-    color: white;
-    border: 1px white solid;
+    background-color: rgb(41, 127, 240);
 }
 
 .primary:hover {
-    background-color: plum;
+    background-color: rgba(41, 127, 240, 0.5);
 }
 
 .primary:active {
-    background-color: darkorchid;
+    background-color: rgb(22, 98, 197);
 }
 
 .secondary {
-    background-color: violet;
-    color: white;
-    border: 1px white solid;
+    background-color: rgb(15, 172, 85);
 }
 
 .secondary:hover {
-    background-color: pink;
+    background-color: rgba(15, 172, 85, 0.5);
 }
 
 .secondary:active {
-    background-color: darkviolet;
+    background-color: rgb(24, 129, 71);
 }
 
 .tertiary {
-    background-color: dodgerblue;
-    color: white;
-    border: 1px solid lightblue;
+    background-color: rgb(181, 28, 201);
 }
 
 .tertiary:hover {
-    background-color: lightblue;
+    background-color: rgba(181, 28, 201, 0.5);
     color: #111;
 }
 
 .tertiary:active {
-    background-color: darkblue;
+    background-color: rgba(112, 16, 124, 0.5);
     color: white;
 }
 
-/* BUTTON SIZES */
+.warning {
+    background-color: rgb(255, 208, 0);
+}
 
-.small {
-    height: 2em;
-    width: 6em;
+.warning:hover {
+    background-color: rgba(255, 208, 0, 0.5);
+}
+
+.warning:active{
+    background-color: rgb(180, 150, 15);
+}
+
+.alert {
+    background-color: rgb(219, 60, 60);
+}
+
+.alert:hover,
+.alert-outline:hover {
+    background-color: rgba(219, 60, 60, 0.5);
+}
+
+.alert:active,
+.alert-outline:active {
+    background-color: rgb(80, 22, 22);
+}
+
+.disabled,
+.disabled:hover {
+    background-color: rgb(172, 172, 172);
+    color: lightgray;
+}
+
+/* OPAQUE BUTTON COLORS */
+.primary-outline {
+    background-color: none;
+    border-color: rgb(41, 127, 240);
+    color: rgb(41, 127, 240);
+}
+
+.primary-outline:hover {
+    background-color: rgb(41, 127, 240);
+    color:white;
+}
+
+.primary-outline:active {
+    background-color: rgb(22, 98, 197);
+    color:white;
+}
+
+.secondary-outline {
+    background-color: none;
+    border-color: rgb(15, 172, 85);
+    color: rgb(15, 172, 85);
+}
+
+.secondary-outline:hover {
+    background-color: rgb(15, 172, 85);
+    color: white;
+
+}
+
+.secondary-outline:active {
+    background-color: rgb(15, 172, 85);
+    color: white;
+}
+
+.tertiary-outline {
+    background-color: none;
+    border-color: rgb(181, 28, 201);
+    color: rgb(181, 28, 201);
+}
+
+.tertiary-outline:hover {
+    background-color: rgb(181, 28, 201);
+    color: white;
+}
+.tertiary-outline:active {
+    background-color: rgb(112, 16, 124);
+    color: white;
+}
+
+.warning-outline {
+    background-color: none;
+    border-color: rgb(255, 208, 0);
+    color: rgb(255, 208, 0);
+}
+
+.warning-outline:hover {
+    background-color: rgb(255, 208, 0);
+}
+.warning-outline:active {
+    background-color: rgb(180, 150, 15);
+}
+
+.alert-outline {
+    background-color: none;
+    border-color: rgb(219, 60, 60);
+    color: rgb(219, 60, 60);
+}
+
+/* .alert-outline:hover {
+    background-color: rgb(219, 60, 60);
+} */
+
+.disabled-outline,
+.disabled-outline:hover {
+    background-color: rgb(172, 172, 172);
+    color: lightgray;
+}
+
+
+/* BUTTON SIZES */
+.button.extra-large {
+    font-size: 2.5em;
+}
+
+.button.large {
+    font-size: 2em;
+}
+
+.button.medium {
+    font-size: 1.5em;
+
+}
+
+.button.small {
+    font-size: 0.75em;
+}
+
+.button.extra-small {
+    font-size: 0.5em;
 }
 
