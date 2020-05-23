@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-size: 1.5em; */
+}
+
+.button {
+    padding: 1em;
+    border: 1px lightgray solid;
+    border-radius: 0.25em;
+    color: darkgray;
+    width: auto;
+    display: inline-block;
+    cursor: pointer;
+
+    line-height: 100%;
+}
+
+.button:hover {
+    background-color: darkgray;
+    color: white;
+}
+
+/* BUTTON COLORS */
+.primary {
+    background-color: purple;
+    color: white;
+    border: 1px white solid;
+}
+
+.primary:hover {
+    background-color: plum;
+}
+
+.primary:active {
+    background-color: darkorchid;
+}
+
+.secondary {
+    background-color: violet;
+    color: white;
+    border: 1px white solid;
+}
+
+.secondary:hover {
+    background-color: pink;
+}
+
+.secondary:active {
+    background-color: darkviolet;
+}
+
+.tertiary {
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid lightblue;
+}
+
+.tertiary:hover {
+    background-color: lightblue;
+    color: #111;
+}
+
+.tertiary:active {
+    background-color: darkblue;
+    color: white;
+}
+
+/* BUTTON SIZES */
+
+.small {
+    height: 2em;
+    width: 6em;
+}
+
