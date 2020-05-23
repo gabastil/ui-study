@@ -1,0 +1,54 @@
+* {
+    padding: none;
+    margin: none;
+    font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    display: block;
+}
+
+.container h1 {
+    width: 100%;
+}
+
+.switch {
+    height: 2em;
+    width: 3em;
+    padding: 0.5em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.track {
+    height: 0.5em;
+    width: 3em;
+    margin: auto;
+    background-color: gray;
+    border-radius: 0.25em;
+    position: absolute;
+    z-index: -1;
+}
+
+.knob {
+    height: 1em;
+    width: 1em;
+    border-radius: 1em;
+    border: 1px solid gray;
+    background-color: white;
+    position: absolute;
+    z-index: 3;
+}
+
+.switch:hover .knob {
+    background-color: #eee;
+}
+
+.primary .track,
+.secondary .track {
+    background-color: green;
+    border: 1px lightgray solid;
+}
