@@ -4,8 +4,14 @@
     font-family: 'Roboto', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+body {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
 .container {
     display: block;
+    margin: 0 2em;
 }
 
 .container h1 {
@@ -19,18 +25,21 @@
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
+    /* text-align: center; */
     border: 1px solid lightgray;
     cursor: pointer;
 }
 
 .track {
     height: 0.5em;
-    width: 3em;
+    width: 2.5em;
     margin: auto;
     background-color: gray;
     border-radius: 0.25em;
     position: absolute;
     z-index: -1;
+    transition: background-color 0.1s ease-in;
 }
 
 .knob {
@@ -41,14 +50,55 @@
     background-color: white;
     position: absolute;
     z-index: 3;
+    left: .5em;
+    transition: left 0.1s ease-in;
+}
+
+.switched-on {
+    left: 2.5em;
+    transition: left 0.1s ease-in;
 }
 
 .switch:hover .knob {
     background-color: #eee;
 }
 
-.primary .track,
 .secondary .track {
-    background-color: green;
+    background-color: palevioletred;
     border: 1px lightgray solid;
+}
+
+.secondary .track-on,
+.track-on {
+    background-color: lightseagreen;
+    transition: all 0.1s linear;
+}
+
+.inset .track {
+    height: 1.1em;
+    border-radius: 1em;
+}
+
+.nested .knob {
+    left: 0;
+}
+
+.nested .switched-on {
+    left: 1.5em;
+}
+
+.label-test {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0.5em;
+    justify-content: flex-end;
+    /* background: pink; */
+}
+
+.label-test .switch {
+    border: none;
+}
+
+.label-test p {
+    margin: 1em;
 }
