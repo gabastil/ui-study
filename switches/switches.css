@@ -6,7 +6,7 @@
 
 body {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
 }
 
 .container {
@@ -42,6 +42,15 @@ body {
     transition: background-color 0.1s ease-in;
 }
 
+.square-track {
+    height: 1em;
+    width: 2.5em;
+    margin: auto;
+    background-color: gray;
+    position: absolute;
+    vertical-align: middle;
+}
+
 .knob {
     height: 1em;
     width: 1em;
@@ -54,6 +63,16 @@ body {
     transition: left 0.1s ease-in;
 }
 
+.square-knob {
+    height: 0.9em;
+    width: 0.9em;
+    border: 1px solid gray;
+    background-color: white;
+    position: absolute;
+    /* left: .5em; */
+    transition: all 0.1s ease-in;
+}
+
 .switched-on {
     left: 2.5em;
     transition: left 0.1s ease-in;
@@ -63,7 +82,16 @@ body {
     background-color: #eee;
 }
 
-.secondary .track {
+.switch:hover .track,
+.switch:hover .square-track {
+    /* background-color: rgb(168, 168, 168); */
+    /* border: 1px solid lightseagreen; */
+    border: 1px solid royalblue;
+    box-shadow: 0 0 0.25em royalblue;
+}
+
+.secondary .track,
+.secondary .square-track {
     background-color: palevioletred;
     border: 1px lightgray solid;
 }
@@ -79,12 +107,14 @@ body {
     border-radius: 1em;
 }
 
-.nested .knob {
+.nested .knob,
+.nested .square-knob {
     left: 0;
 }
 
 .nested .switched-on {
     left: 1.5em;
+    transition: all 0.25s ease-in;
 }
 
 .label-test {

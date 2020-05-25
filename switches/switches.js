@@ -1,10 +1,11 @@
 $(document).ready(() => {
-    const switch_ = $("div[class*='switch']");
+    const switch_ = $("div[class*='switch']"),
+          squares = $("div[class*='square']");
 
     switch_.click(function(){
         const current = $(this);
-              knob = current.find('.knob'),
-              track = current.find('.track'),
+              knob = current.find('[class*=\'knob\']'),
+              track = current.find('[class*=\'track\']'),
               is_primary = current.is("[class*='primary']"),
               is_secondary = current.is("[class*='secondary']");
 
