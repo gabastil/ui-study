@@ -18,6 +18,10 @@ html, body {
     align-items: center;
 }
 
+.container > div {
+    flex-shrink: 1;
+}
+
 .exit {
     font-size: 1em;
     /* color: white; */
@@ -40,9 +44,21 @@ html, body {
 }
 
 .banner {
-    border-radius: 0;
-    padding: 0;
+    border-radius: 0.25em;
+    padding: 0.25em;
     border-left: 2px solid darkgray;
+    vertical-align: middle;
+    position: relative;
+}
+
+.banner .exit {
+    font-size: 1em;
+    height: 1em;
+    top: -0.25em;
+    right: 0;
+    border-left: 1px solid darkgray;
+    padding: 0.25em;
+    position: absolute;
 }
 
 .primary {
@@ -53,6 +69,13 @@ html, body {
 
 .primary .exit {
     color: royalblue;
+    border-left: 1px solid royalblue;
+}
+
+.primary .exit:hover {
+    color: royalblue;
+    background-color: lightblue;
+    border-left: 1px solid royalblue;
 }
 
 .secondary {
