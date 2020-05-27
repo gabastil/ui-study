@@ -10,16 +10,22 @@ html, body {
 }
 
 .container {
-    height: 50%;
+    /* height: 50%; */
     width: 50%;
+    margin: auto;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     justify-items: space-around;
     align-items: center;
+    padding: 1em;
+    /* background-color: gray; */
 }
 
-.container > div {
-    flex-shrink: 1;
+.panels {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    /* background-color: gray; */
 }
 
 .exit {
@@ -38,9 +44,21 @@ html, body {
     width: 100%;
     background: lightgray;
     border: 1px solid gray;
-    border-radius: 1em ;
+    border-radius: 0.5em ;
     padding: 0.5em;
     margin: 0.5em;
+    display: flex;
+    flex-flow: row nowrap;
+    visibility: visible;
+    transition: height 1s ease-out;
+}
+
+#base .panel .exit {
+    border: none;
+}
+
+.content {
+    flex-grow: 4;
 }
 
 .banner {
@@ -53,12 +71,22 @@ html, body {
 
 .banner .exit {
     font-size: 1em;
-    height: 1em;
+    width: 1em;
+    text-align: center;
     top: -0.25em;
-    right: 0;
+    right: -0.25em;
+    border-radius: 0 .25em .25em 0;
     border-left: 1px solid darkgray;
     padding: 0.25em;
     position: absolute;
+}
+
+.banner .exit:hover {
+    background: rgb(238, 238, 238);
+}
+
+.banner .exit:active {
+    background: white;
 }
 
 .primary {
@@ -73,9 +101,11 @@ html, body {
 }
 
 .primary .exit:hover {
-    color: royalblue;
     background-color: lightblue;
-    border-left: 1px solid royalblue;
+}
+
+.primary .exit:active {
+    background-color: white;
 }
 
 .secondary {
@@ -86,6 +116,15 @@ html, body {
 
 .secondary .exit {
     color: forestgreen;
+    border-left: 1px solid forestgreen;
+}
+
+.secondary .exit:hover {
+    background-color: rgb(174, 243, 174);
+}
+
+.secondary .exit:active {
+    background-color: white;
 }
 
 .warning {
@@ -96,6 +135,14 @@ html, body {
 
 .warning .exit {
     color: orange;
+    border-left: 1px solid orange;
+}
+
+.warning .exit:hover {
+    background-color: rgb(223, 223, 155);
+}
+.warning .exit:active {
+    background-color: white;
 }
 
 .alert {
@@ -106,6 +153,15 @@ html, body {
 
 .alert .exit {
     color: darkred;
+    border-left: 1px solid darkred;
+}
+
+.alert .exit:hover {
+    background-color: rgb(190, 41, 41);
+}
+
+.alert .exit:active {
+    background-color: white;
 }
 
 .banner {}
